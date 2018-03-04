@@ -1,0 +1,3 @@
+rootProject.name = 'Macros'
+
+include ':app'
