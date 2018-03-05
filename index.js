@@ -1,10 +1,11 @@
 // Import a Library to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/Header';
 
 // create a component
 const App = () => (
-    <Text>Dashboard</Text>
+    <Header headerText={'Dashboard'} />
   );
 // render it to the device
 AppRegistry.registerComponent('Macros', () => App);
