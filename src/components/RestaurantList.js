@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import axios from 'axios';
+import zomato from 'zomato';
 
 class RestaurantList extends Component {
   componentWillMount() {
-    axios.get('https://developers.zomato.com/api/v2.1/collections?city_id=1')
-      .then(response => console.log(response));
-  }
+    const client = zomato.createClient({
+  userKey: 'f4427b20e07ce83596b26c6cd4bf9a5e' });
+  console.log(client);
+}
 
   render() {
   return (
